@@ -21,9 +21,6 @@
         <br/>
         <h4>Medications</h4>
         <div id="meds">Loading...</div>
-        <br/>
-        <h4>Encounter</h4>
-        <div id="enc">Loading...</div>
         <script type="text/javascript">
             FHIR.oauth2.ready().then(function(client) {
                 
@@ -61,7 +58,6 @@
                         document.getElementById("meds").innerText = error.stack;
                     }
                 );
-
 
             }).catch(console.error);
         </script>
